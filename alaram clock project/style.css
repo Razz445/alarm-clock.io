@@ -1,0 +1,97 @@
+/* Apply box-sizing to all elements to include padding and border in element's total width and height */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set the font family for the entire body of the page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Set the styles for the container element */
+.container {
+  max-width: 600px; /* Set the maximum width of the container */
+  margin: 50px auto; /* Center the container element on the page */
+  background-color: #fff; /* Set the background color of the container */
+  border-radius: 10px; /* Round the corners of the container */
+  padding: 30px; /* Add padding to the container */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Add a box-shadow to the container */
+  display: flex; /* Use flexbox to align child elements */
+  flex-direction: column; /* Stack the child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  justify-content: center; /* Center child elements vertically */
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.clock {
+  font-size: 80px;/* Set the font size for the clock */
+  font-weight: bold;/* Set the font weight for the clock */
+  margin-bottom: 30px;/* Add margin to the bottom of the clock */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* Set the styles for the form-group element */
+.form-group {
+  display: flex;
+  flex-direction: row;/* Align child elements horizontally */
+  margin-bottom: 20px;
+  align-items: center;/* Center child elements horizontally */
+}
+
+.form-group label {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* Set the styles for the form-group select element */
+.form-group select {
+  font-size: 24px; /* Set the font size for the select element */
+  padding: 10px; /* Add padding to the select element */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Round the corners of the select element */
+  background-color: #f7f7f7; /* Set the background color of the select element */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Add a box-shadow to the select element */
+  outline: none; /* Remove the outline */
+}
+
+.form-group input[type="number"] {
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1abc9c;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-right: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #16a085;
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+}
+
+.cancel-btn:hover {
+  background-color: #c0392b;
+}
